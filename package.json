@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "description": "Angular Material Datetime Picker",
   "files": [
-    "dist"
+    "dist/@angular-material-components/datetime-picker/**/*"
   ],
   "author": "HO Hong Quan",
   "repository": {
