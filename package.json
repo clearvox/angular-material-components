@@ -2,6 +2,9 @@
   "name": "angular-material-components",
   "version": "4.0.0",
   "description": "Angular Material Datetime Picker",
+  "files": [
+    "dist"
+  ],
   "author": "HO Hong Quan",
   "repository": {
     "type": "git",
@@ -131,8 +134,5 @@
     "safari 15.4",
     "samsung 17.0",
     "samsung 16.0"
-  ],
-  "files": [
-    "dist"
   ]
 }
