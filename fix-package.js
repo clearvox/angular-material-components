@@ -1,8 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const packagePath = path.resolve(__dirname, '../dist/@angular-material-components/datetime-picker/package.json');
-const packageJson = require(packagePath);
+const packagePath = path.resolve(__dirname, '../angular-material-components/dist/@angular-material-components/datetime-picker/package.json');
+
+if (!fs.existsSync(packagePath)) {
+  console.error(`File not found: ${packagePath}.`);
+  process.exit(1);
+}
+
+const packageJson = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
 
 packageJson.peerDependencies = {
   "@angular/animations": "^15.0.0 || ^16.0.0 || ^18.0.0",
